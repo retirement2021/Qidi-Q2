@@ -1,0 +1,136 @@
+# FLUIDD UI Setup
+
+This guide explains how to back up your existing Klipper configuration and install the supplied configuration files and macros.
+
+## 1. Back Up Your Existing Configuration
+
+In **Fluidd**, click the **Configuration** button on the left-hand side.
+
+### Back up the KAMP folder
+
+1. Right-click the **KAMP** folder.
+2. Select **Create ZIP**.
+3. Right-click the newly created ZIP file and download it to your PC.
+
+### Back up `printer.cfg`
+
+Right-click **`printer.cfg`** and download it to your PC.
+
+### Back up `gcode_macro.cfg`
+
+1. Open the **`klipper-macros-qd`** folder.
+2. Right-click **`gcode_macro.cfg`**.
+3. Download it to your PC.
+
+You should now have copies of all the original, unchanged files safely stored on your PC. **Do not skip this step.**
+
+---
+
+## 2. Rename the Original Files
+
+Before installing the supplied files, rename the existing configuration files so they are preserved.
+
+Rename:
+
+```text
+KAMP.cfg
+→ KAMP.cfg-original
+
+printer.cfg
+→ printer.cfg-original
+
+klipper-macros-qd
+→ klipper-macros-qd-original
+```
+
+Then open the **KAMP** folder and rename:
+
+```text
+adaptive_meshing.cfg
+→ adaptive_meshing.cfg-original
+
+KAMP_Settings.cfg
+→ KAMP_Settings.cfg-original
+```
+
+These original files are retained as backups and can be restored if required.
+
+---
+
+## 3. Install the Supplied KAMP Files
+
+Open the **KAMP** folder.
+
+At the top of the page, click **+ ADD** and select **Upload Files**.
+
+Upload the supplied:
+
+```text
+adaptive_Meshing.cfg
+KAMP_Settings.cfg
+```
+
+Once uploaded, click the blue folder icon to return to the main configuration directory.
+
+---
+
+## 4. Install the Main Configuration Files
+
+Click **+ ADD** again and upload:
+
+```text
+printer.cfg
+My-Configs.cfg
+gcode_macro.cfg
+```
+
+Once all the files have been uploaded, double-click any configuration file to open it.
+
+In the top-right corner, click:
+
+**SAVE & RESTART**
+
+This will save the changes and restart Klipper.
+
+---
+
+## 5. Organising Macros in Fluidd
+
+You can organise the available macros into groups to make them easier to find.
+
+In Fluidd:
+
+1. Click the **Settings** button on the left.
+2. Scroll down to **Macros**.
+3. Organise the useful macros into groups such as:
+
+   * Calibration
+   * Filament
+   * Print
+
+Some of the useful macros to look for are:
+
+```text
+PID_BED
+PID_EXTRUDER
+PROB_BED
+LOAD_FILAMENT
+UNLOAD_FILAMENT
+SET_PAUSE_AT_LAYER
+```
+
+Organising the macros this way gives you quick access to the functions you use most often.
+
+---
+
+## 6. Bed Screw Adjustment
+
+The `SCREWS_TILT_CALCULATE` function is also available directly through the **Tools** section in Fluidd.
+
+This gives you easy access to the bed screw adjustment procedure without having to enter the command manually in the console.
+
+---
+
+### Important
+
+Keep the original configuration files you downloaded as a backup. If you encounter a problem with the new configuration, you can use these files to restore your original setup.
