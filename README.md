@@ -18,7 +18,7 @@ This configuration brings together the main printer configuration, custom macros
 
 These files have been developed around a Qidi Q2 being used with a **normal external filament spool** rather than the Qidi Box.
 
-If you have a Qidi Box installed, this is **not intended to replace the complete Qidi Box configuration**.
+If you have a Qidi Box installed, this is **not intended for you**.
 
 The configuration contains some original Qidi code and compatibility sections because they form part of the Q2's normal Klipper environment. However, the custom functionality in this repository is primarily aimed at the **non-Qidi-Box Q2**.
 
@@ -292,6 +292,7 @@ Always make a complete backup before replacing any Klipper configuration files.
 
 **2. Copy the required configuration files**
 rename your.cfg files with -original at the end for id
+
 Place the supplied files into your Klipper configuration directory.
 
 **3. Check the includes**
@@ -360,3 +361,5 @@ The goal of this project is to make the transition to a more customised Klipper/
 Instead of spending time working out which macros are required, where they belong, how KAMP needs to be configured and how the various Qidi functions fit together, this repository provides the configuration as a starting point.
 
 **Copy, configure, check and print.**
+
+
