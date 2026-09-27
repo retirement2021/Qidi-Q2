@@ -4,6 +4,8 @@ Qidi Q2  Without a Qidi Box, Macros and adaptive bed mesh
 
 A complete set of custom Klipper configuration and macros for the **Qidi Q2 without the Qidi Box**.
 
+Qidi Q2, configs, macros, 3D printer, Klipper, firmware, settings, printer configuration
+
 The aim of this project is simple:
 
 **To provide Qidi Q2 owners who are running without a Qidi Box with a ready-to-use Klipper configuration, rather than requiring them to build and modify the configuration themselves.**
