@@ -102,21 +102,37 @@ In Fluidd:
 
 1. Click the **Settings** button on the left.
 2. Scroll down to **Macros**.
-3. Organise the useful macros into groups such as:
+3. All of the macros will be jumbled up in the "uncategorised" section.
+4. Create & organise the useful macros into categorys such as: 
 
    * Calibration
    * Filament
    * Print
 
+5. Click on a macro, a box will appear choose which catagory you want to put it in.
+6. Only pick out the useful ones you want to use and leave the rest in the uncategorised page. 5-6 in each category.
+7. They can be easily moved around to get the order you want them to be displayed
+
 Some of the useful macros to look for are:
 
-```text
+calabration category
 PID_BED
 PID_EXTRUDER
 PROB_BED
+SREWS_TILT
+Z_TILT
+PROBE_BED
+ALL_HEATERS_OFF
+
+filament category
 LOAD_FILAMENT
 UNLOAD_FILAMENT
+
+print category
 SET_PAUSE_AT_LAYER
+CANCEL _PRINT
+PAUSE
+RESUME
 ```
 
 Organising the macros this way gives you quick access to the functions you use most often.
