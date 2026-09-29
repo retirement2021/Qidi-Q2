@@ -1,5 +1,6 @@
 ORCA SLICER MACHINE G-CODE.
 copy and paste these sections into Orcaslicer 
+some of this code was taken from Qidi Studio.
 
 #Start code
 
@@ -13,6 +14,7 @@ M141 S[chamber_temperature]
 G4 P3000
 G1 X108 Y1 F30000
 G1 Z1 F600
+
 #end of custom start code
 
 #------------------
@@ -36,6 +38,7 @@ G0 X90 Y270 F12000
 {if max_layer_z < max_print_height / 2}G1 Z{max_print_height / 2 + 10} F600{else}G1 Z{min(max_print_height, max_layer_z + 3)}{endif}
 M104 S0
 PRINT_END
+
 #end of custom finish code.
 
 
@@ -73,6 +76,7 @@ G1 Z[layer_z]
 TIMELAPSE_TAKE_FRAME
 {endif}
 G92 E0
+
 #end of layer change g-code
 
 #-----------------------
@@ -194,12 +198,18 @@ G1 Y270 F8000
 M106 S0
 G1 E2 F1800
 ENABLE_ALL_SENSOR
+
 #end of change filament g-code
 
 #pause g-code
 PAUSE
-#END OF PAUSE G-CODE
 
-ORCA SLICER. Prepare page. "others" "G-code output" check the box "label object" and "exclude objects"
-OPTION, Filename format can be changed, this code gives you what filament type, how many mtrs of filament and it's name. {filament_settings_id[0]}_ {int((used_filament*100.0))/(100.0)}mtrs_{input_filename_base}.gcode
+#end of custom pause g-code
+
+ORCA SLICER. Prepare page. "others" "G-code output" check the box "label object" and "exclude objects" and SAVE it
+OPTION, Filename format can be changed, this code gives you what filament type, how many mtrs of filament used and the job's name.
+
+{filament_settings_id[0]}_ {int((used_filament*100.0))/(100.0)}mtrs_{input_filename_base}.gcode.
+
+Example: this how fluidd shows your Jobs, Generic PETG_ 0.75mtrs_PTFE Connector 9.gcode.3mf, I particularity like the filamnt type. 
 
