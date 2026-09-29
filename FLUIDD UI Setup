@@ -125,9 +125,12 @@ Organising the macros this way gives you quick access to the functions you use m
 
 ## 6. Bed Screw Adjustment
 
-The `SCREWS_TILT_CALCULATE` function is also available directly through the **Tools** section in Fluidd.
+The basic `SCREWS_TILT_CALCULATE` function is also available directly through the **Tools** section in Fluidd.
+The "SCREWS_TILT" macro is a fully prepared macro of the "SCREWS_TILT_CALCULATE" function, that homes, heats the bed, heats the nozzle, wipes the nozzle before it starts.
 
 This gives you easy access to the bed screw adjustment procedure without having to enter the command manually in the console.
+
+The Z_TILT macro does a similar job of homeing, heating and wiping for more complete user experience than the supplied function.
 
 ---
 
