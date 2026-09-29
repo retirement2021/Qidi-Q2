@@ -7,21 +7,32 @@ Add a filter, in the box that appears
 Name-         Hide Metadata
 Type-         Starts with
 Starts with-  //metadata
-SAVE it
+  SAVE it
 
 Add another filter, in the box that appears
 
 Name-         Hide Probe Measurement
 Type-         starts with
 Starts with-  //probe at
-SAVE it
+  SAVE it
 
 Add another filter, in the box that appears
 
 Name-         Hide Probe Points
 Type-         Expression
 Expression-   ^// [0-9]+\s+\|
-SAVE it
+  SAVE it
+
+Add another filter, in the box that appears
+
+Name-         Hide Extraction Progress
+Type-         Starts with
+Starts with-  // [virtual_sdcard] extraction_progress:
+  SAVE it
+
+	
+
+
 
 
 If you press the cog within the console you can turn them on and off via the check boxes
